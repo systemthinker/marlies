@@ -1,5 +1,7 @@
 import React from 'react';
 
 export default function (){
-    return <p>Home</p>
+    return  <div data-aos='fade-up'>
+    Helloooo!
+  </div>
 }
