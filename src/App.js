@@ -7,7 +7,13 @@ import {
   NavLink,
  } from "react-router-dom";
 import Home from './components/Home'
-
+import OverOns from './components/OverOns'
+import Aanbod from './components/Aanbod'
+import Contact from './components/Contact'
+import Navbar from './components/Navbar'
+import Maatwerk from './components/Maatwerk'
+import Workshops from './components/Workshops'
+import Coaching from './components/Coaching'
 
 function App() {
 
@@ -16,15 +22,9 @@ function App() {
     <Router>
     <div className="App">
       
-       <div className="NavLink">
-            <NavLink activeClassName="Nav-Active" exact to="/" >Home </NavLink>
-          
-            <NavLink activeClassName="Nav-Active" exact to="/aanbod">Aanbod </NavLink>
-          
-            <NavLink activeClassName="Nav-Active" exact to="/overons">Over ons </NavLink>
-          
-            <NavLink activeClassName="Nav-Active" exact to="/contact">Contact </NavLink>
-      </div>
+       
+
+      <Navbar />
             
           
       
@@ -42,6 +42,12 @@ function App() {
           
         </Route>
         <Route exact path="/Contact" component={Contact}>
+        </Route>
+        <Route exact path="/Coaching" component={Coaching}>
+          </Route>
+        <Route exact path="/Maatwerk" component={Maatwerk}>
+          </Route>
+        <Route exact path="/Workshops" component={Workshops}>
           </Route>
         
              
