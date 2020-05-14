@@ -4,10 +4,15 @@ import {
     Switch,
     Route,
     NavLink,
+    
+   
    } from "react-router-dom";
+   import Menu from '@material-ui/core/Menu';
+   import MenuItem from '@material-ui/core/MenuItem';
+   
 
 export default function Navbar(){
-    return (
+    return ( <Menu>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light ">
             
@@ -17,7 +22,8 @@ export default function Navbar(){
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <NavLink class="nav-link " exact to="/home">Home</NavLink>
+                    <MenuItem class="nav-link" component={NavLink} exact to={'/home'}>Home</MenuItem>
+                       
                     </li>
                     <li class="nav-item dropdown">
                         <NavLink class="nav-link dropdown-toggle " exact to="/aanbod" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -39,5 +45,6 @@ export default function Navbar(){
                 </ul>
             </div>
 </nav>
+</Menu>
     )
 }
