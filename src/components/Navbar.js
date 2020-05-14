@@ -9,15 +9,18 @@ import {
 export default function Navbar(){
     return (
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <NavLink class="navbar-brand" exact to="/">Home</NavLink>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                        <NavLink class="nav-link dropdown-toggle" exact to="/aanbod" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <NavLink class="nav-link " exact to="/home">Home</NavLink>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <NavLink class="nav-link dropdown-toggle " exact to="/aanbod" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Aanbod
                         </NavLink>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -27,10 +30,10 @@ export default function Navbar(){
                         </div>
                     </li>
                     <li class="nav-item">
-                        <NavLink class="nav-link" exact to="/aanbod">Over ons</NavLink>
+                        <NavLink class="nav-link " exact to="/aanbod">Over ons</NavLink>
                     </li>
                     <li class="nav-item">
-                        <NavLink class="nav-link" exact to="/aanbod">Contact</NavLink>
+                        <NavLink class="nav-link " exact to="/aanbod">Contact</NavLink>
                     </li>
                     
                 </ul>
