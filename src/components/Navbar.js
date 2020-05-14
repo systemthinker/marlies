@@ -4,6 +4,7 @@ import {
     Switch,
     Route,
     NavLink,
+    Link
     
    
    } from "react-router-dom";
@@ -12,7 +13,7 @@ import {
    
 
 export default function Navbar(){
-    return ( <Menu>
+    return ( 
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light ">
             
@@ -22,29 +23,30 @@ export default function Navbar(){
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
+                    
                     <MenuItem class="nav-link" component={NavLink} exact to={'/home'}>Home</MenuItem>
-                       
+                      
                     </li>
                     <li class="nav-item dropdown">
-                        <NavLink class="nav-link dropdown-toggle " exact to="/aanbod" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <MenuItem class="nav-link dropdown-toggle " component={NavLink} exact to="/aanbod" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Aanbod
-                        </NavLink>
+                        </MenuItem>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <NavLink class="dropdown-item" exact to="/workshops">Academy Workshops</NavLink>
-                        <NavLink class="dropdown-item" exact to="/maatwerk">Maatwerk voor groepen</NavLink>
-                        <NavLink class="dropdown-item" exact to="/coaching">Een op een coaching</NavLink>
+                        <MenuItem class="dropdown-item" component={NavLink} exact to="/workshops">Academy Workshops</MenuItem>
+                        <MenuItem class="dropdown-item" component={NavLink} exact to="/maatwerk">Maatwerk voor groepen</MenuItem>
+                        <MenuItem class="dropdown-item" component={NavLink} exact to="/coaching">Een op een coaching</MenuItem>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <NavLink class="nav-link " exact to="/aanbod">Over ons</NavLink>
+                        <MenuItem class="nav-link " component={NavLink} exact to="/aanbod">Over ons</MenuItem>
                     </li>
                     <li class="nav-item">
-                        <NavLink class="nav-link " exact to="/aanbod">Contact</NavLink>
+                        <MenuItem class="nav-link " component={NavLink} exact to="/aanbod">Contact</MenuItem>
                     </li>
                     
                 </ul>
             </div>
 </nav>
-</Menu>
+
     )
 }
