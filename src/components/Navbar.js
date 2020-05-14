@@ -38,10 +38,10 @@ export default function Navbar(){
                         </div>
                     </li>
                     <li class="nav-item">
-                        <MenuItem class="nav-link " component={NavLink} exact to="/aanbod">Over ons</MenuItem>
+                        <MenuItem class="nav-link " component={NavLink} exact to="/overons">Over ons</MenuItem>
                     </li>
                     <li class="nav-item">
-                        <MenuItem class="nav-link " component={NavLink} exact to="/aanbod">Contact</MenuItem>
+                        <MenuItem class="nav-link " component={NavLink} exact to="/contact">Contact</MenuItem>
                     </li>
                     
                 </ul>
