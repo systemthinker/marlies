@@ -1,0 +1,70 @@
+body, html {
+    height: 100%;
+  }
+  .bg {
+    /* The image used */
+    background-image: url("https://wallpaperaccess.com/full/295499.jpg");
+  
+    /* Full height */
+    height: 400px;
+    margin-top: 20px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .header {
+    max-height: inherit;
+    padding-top: 103px;
+    text-decoration-color: antiquewhite;
+    color: antiquewhite;
+    text-align: center;
+  }
+
+  .header h1 {
+      background-color: rgba(233, 243, 235, 0.05);
+      display:inline-block; 
+
+  }
+
+  .header p {
+    background-color: rgba(233, 243, 235, 0.05);
+    display:inline-block; 
+  }
+
+  .header div button{
+    display:inline-block;
+    background-color: rgba(245, 248, 247, 0.85);
+
+  }
+.midSec{
+    font-family: Roboto,Apercu,"Source Sans Pro",system,system-ui, -apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+    color: #232423
+}
+.midSec p{
+    text-align: left;
+}  
+
+@media (max-width: 575px){
+h1{
+    font-size: 30px !important;
+    line-height: 42px !important;
+}
+p {
+    font-size: 15px !important;
+    line-height: 18px !important;
+}
+}
+
+@media (max-width: 400px){
+    h1{
+        font-size: 25px !important;
+        line-height: 35px !important;
+    }
+    p {
+        font-size: 15px !important;
+        line-height: 15px !important;
+    }
+    }
