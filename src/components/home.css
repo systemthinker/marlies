@@ -37,11 +37,29 @@ body, html {
   .header div button{
     display:inline-block;
     background-color: rgba(245, 248, 247, 0.85);
+    padding-left: 45px;
+    padding-right: 45px;
+   
+        
+        
+        
+        
+        
+       border: none;
+    
+    
+    
 
   }
+
+  .header div button:hover {
+    background-color: white;
+    color: black;
+}
 .midSec{
     font-family: Roboto,Apercu,"Source Sans Pro",system,system-ui, -apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
-    color: #232423
+    color: #232423;
+    margin-top: 20px;
 }
 .midSec p{
     text-align: left;

@@ -1,0 +1,38 @@
+.backgroundHomeCard {
+    /* The image used */
+    background-image: url("https://wallpaperaccess.com/full/295499.jpg");
+  
+    /* Full height */
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 50px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    color: white;
+    
+
+  }
+
+  .duinen {
+      background-image: url("https://wallpaperaccess.com/full/295499.jpg");
+      height: 200px;
+      margin-top: 50px;
+      margin-left: 50px;
+    
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 70px;
+      color: white;
+    }
+
+  .backgroundHomeCard button {
+    background-color: #462903;
+    color: white;
+    border: none;
+  }  

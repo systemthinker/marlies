@@ -10,6 +10,7 @@ import {
    } from "react-router-dom";
    import Menu from '@material-ui/core/Menu';
    import MenuItem from '@material-ui/core/MenuItem';
+   import './navbar.css'
    
 
 export default function Navbar(){
